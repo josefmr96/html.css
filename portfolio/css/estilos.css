@@ -1,0 +1,83 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eeeeee;
+}
+.nav-link{
+    color: black !important;
+    font-size: 20px;
+}
+.nav-item{
+    width: 250px;
+    text-align: center;
+
+}
+.navbar-nav{
+    padding: 0 17%;
+}
+
+#contacto textarea{
+    background-color: #eeeeee;
+}
+#contacto h1, h2{
+    font-weight: 900;
+}
+h1{
+    font-size: 55px;
+    padding-bottom: 20px;
+    color: rgb(45, 45, 45);
+    
+}
+#contacto input[type=text], #contacto input[type=email]{
+    background-color: #eeeeee;
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+}
+#contacto textarea{
+    background-color: #eeeeee;
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0px
+}
+.btn{
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    padding: 8px 30px;
+    border: 1px solid black;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+footer{
+    background-color: white;
+    padding: 50px;
+}
+footer i {
+    font-size: 35px;
+    border: 1px solid;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 8px 0 0 0;
+    border-radius: 80px;
+    margin: 0 15px;
+}
+footer a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bolder
+}
+@media (max-width: 700px){/*para ceclulares y para mombile*/
+      #contacto{
+          margin: 20px 0;
+    }
+      #contacto h1{
+          font-size: 40px;
+      }
+      #contacto h2{
+          font-size: 20px;
+          line-height: 30px;
+      }
+}

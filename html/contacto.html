@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <style>
+    body{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0px;
+        padding: 0px;
+    }
+    h1{
+        color: red;
+        text-align: center;
+    }
+    label{
+        font-weight: bold;
+    }
+    label span{
+        color: red;
+    }
+    .boton{
+        background-color: red;
+        color:white;
+        font-size: 18px;
+        width: 150px;
+        height: 30px;
+    }
+    .boton:hover{
+        background-color: white;
+        color: red;
+    }
+    form input, form select{
+        width: 150px;
+        height: 25px;
+        font-size: 15px;
+    }
+    li{
+        float: left;
+        list-style: none;
+        width: 200px;
+        margin-top: 25px;
+        text-align: center;
+        padding: 10px 10px 10px;
+    }
+    a{
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+    ul{
+        background-color: red;
+        overflow: hidden;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        clear: both;
+        padding: 20px 50px;
+    }
+    li:hover{
+        background-color: white;
+    }
+    a:hover{
+        color: red;
+        padding: 1px;
+    }
+
+    footer i{
+        padding: 8px 0 0 0;
+        border-radius: 80px;
+        font-size: 40px;
+        border: 3px solid;
+        height: 55px;
+        width: 55px;
+        margin: 0 15px;
+        color: blue;
+        background-color:forestgreen
+
+    }
+    footer{
+        text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+<ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="quienes.html">Nosotros</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+</ul>
+    </header>
+    <section>
+    <h1>!Escribinos, te respondemos a la brevedad!</h1>  
+    <form action="" method="POST">
+         <div>
+        <label for="txtNombre">Nombre: <span>*</span></label>
+        <input type="text" name="txtNombre" id="txtNombre" required>
+        </div>
+         <div>
+        <label for="">Correo* <span>*</span>:</label>
+        <input type="email" name="txtCorreo" id="txtCorreo" required>
+         </div>
+         <div>
+        <label for="txtTelefono">Telefono: <span>*</span></label>
+        <input type="text" name="txtTelefono" id="txtTelefono" required placeholder="Ej: (+54) 1122891682">
+         </div>
+        <div>
+            <label for="lstPais">Pais de origen</label>
+            <select name="lstPais" id="lstPais">
+            <optgroup label="Sur America">
+            <option value="Arg">Argentina</option>
+            <option value="Br">Brasil</option>
+            <option value="Co">Colommbia</option>
+            </optgroup>
+            <optgroup label="Europa">
+            <option value="Esp">España</option>
+            <option value="Port">Portugal</option>
+            </select>
+        </div>
+         <div>
+             <label for="lstAsunto">Asunto:</label>
+             <select name="lstAsunto" id="lstAsunto">
+             <option value=disable selected value="">Seleccionar</option>
+             <option value="">Soporte</option>
+             <option value="">Webmaster</option>
+             <option value="">Ventas</option>
+             </select>
+         </div>
+         <div>
+        <label for="txtMensaje">Mensaje: <span>*</span></label>
+        <textarea name="txtMensaje" id="txtMensaje" cols="150" rows="15"required></textarea>
+        </div>
+        <div>
+            <label for="chkNewsletter">Deseo recibir mensajes sobre novedades</label>
+            <input type="checkbox" name="chkNewsletter" id="chkNewsletter" checked>
+        </div>
+        <div>
+            <label for="chkterminos">Acepto terminos y condiciones</label>
+            <input type="checkbox" name="chkterminos" id="chkterminos">
+        </div>
+        <div>
+            <label for="">¿Es mayor de edad?</label>
+           Si <input type="radio" name="optMayor" id="optMayorSi">
+           No <input type="radio" name="optMayor" id="optMayorNo">
+        </div>
+        <div>
+            <input class="boton" type ="submit" value="Enviar">
+        </div>
+    </form>
+    </section>
+    <footer>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-linkedin"></i>
+    </footer>
+</body>
+</html>

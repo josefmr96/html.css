@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salud privada a tu alcance</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+text-align: center;
+color: blue;
+    
+}
+.button{
+    color: brown;
+}
+    </style>
+<body>
+    <h1>Salud privada a tu alcance</h1> <img src="imagenes/gente.jpg" alt="gente" srcset="">
+    <hr>
+    <h2> Si tienes un problema con tu obra social contactanos</h2>
+    <h3>Contactanos</h3>
+    <form action="" method="POST">
+        <div>
+        <label for="txtNombre">Nombre</label>
+        <input type="text" name="txtNombre" id="txtNombre">
+        </div>
+        <div>
+        <label for="txtCorreo">Correo</label>
+        <input type="email" name="txtCorreo" id="txtCorreo">
+        </div>
+        <div>
+        <label for="txtTelefono">Telefono</label>
+        <input type="text" name="txtTelefono" id="txtTelefono" required placeholder="Ej:(+54) 1121801682">
+        </div>
+        <div>
+            <label for="lstPais">PaisdeOrigen</label>
+            <select name="lstPais" id="lstPais">
+            <optgroup label="SurAmerica">
+                <option value="Arg">Argentina</option>
+                <option value="Vnz">Venezuela</option>
+                <option value="Bra">Brasil</option>
+                <option value="Col">Colombia</option>
+            </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="txtMensaje">Mensaje</label>
+            <textarea name="txtMensaje" id="txtMensaje" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="Enviar">Enviar</label>
+            <input class="button" type="button" value="Enviar">
+        </div>
+    </form>
+
+</body>
+</html>
