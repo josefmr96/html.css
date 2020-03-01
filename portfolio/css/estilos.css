@@ -9,10 +9,16 @@ body{
 .nav-item{
     width: 250px;
     text-align: center;
+    text-transform: uppercase;
 
 }
+nav .active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .navbar-nav{
-    padding: 0 17%;
+    padding: 0px;
 }
 
 #contacto textarea{
@@ -25,7 +31,6 @@ h1{
     font-size: 55px;
     padding-bottom: 20px;
     color: rgb(45, 45, 45);
-    
 }
 #contacto input[type=text], #contacto input[type=email]{
     background-color: #eeeeee;
@@ -83,4 +88,25 @@ footer a {
 }
 .cuadro-proyecto{
     background-color: white;
+}
+#sobremi{  /* seccion sobre mi*/
+    background-image: url(C:/Users/User/Desktop/html-css/portfolio/images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.col-6{
+    margin-top: 20px;
+}
+.fas{
+   font-size: 40px;
+   padding: 10px;
+   margin: 15px;
+   background-color:rgba(0, 0, 0, 0.712);
+   color:rgba(255, 255, 255, 0.904);
+}
+#sobremi-cv{ 
+    padding: 30px;
+    background-color:rgba(0, 0, 0, 0.712);
+    color: white !important;
+    
 }
